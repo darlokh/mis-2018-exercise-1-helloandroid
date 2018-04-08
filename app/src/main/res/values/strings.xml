@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">helloandroid</string>
     <string name="button_xyz">hit me</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Connect</string>
+    <string name="foobarText">foobarText</string>
 </resources>
