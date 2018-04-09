@@ -1,7 +1,6 @@
 <resources>
-    <string name="app_name">helloandroid</string>
-    <string name="button_xyz">hit me</string>
-    <string name="edit_message">Enter a message</string>
+    <string name="app_name">hello_android</string>
+    <string name="edit_message">Enter a URL</string>
     <string name="button_send">Connect</string>
-    <string name="foobarText">foobarText</string>
+    <string name="foobarText">foobarTextbarbarbar</string>
 </resources>
