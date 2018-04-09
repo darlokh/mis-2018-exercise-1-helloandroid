@@ -111,13 +111,4 @@ public class MainActivity extends AppCompatActivity {
             toast.show();
         }
     }
-
-    public void helloWorld(View view) {
-        Toast toast = Toast.makeText(MainActivity.this, "hey there", Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.CENTER, 0 ,0);
-        toast.show();
-        final TextView myView = (TextView) findViewById(R.id.textView);
-        myView.setText(R.string.foobarText);
-    }
-
 }
