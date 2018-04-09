@@ -1,0 +1,153 @@
+DROID INFO BERICHT
+
+
+GERÄT
+Modell: ONE E1003 (onyx)
+Hersteller: OnePlus
+Baseband-Version: .4.0.1.c7-00013-M8974AAAAANAZM-1
+RIL-Version: Qualcomm RIL 1.0
+Build-Nummer: onyx-userdebug 6.0.1 MOB30M b6d811ede1 test-keys
+Build-Fingerprint: OnePlus/OnePlus/OnePlus:5.1.1/LMY47V/1441677661:user/release-keys
+Bootloader: unknown
+Java VM: ART 2.1.0
+OS-Version: Marshmallow (6.0.1)
+SDK: 23
+
+DISPLAY
+Auflösung: Full HD, 1080x1920 pixels
+Softwaredichte: 480 dpi (xxhdpi)
+Erneuerungsrate: 60 Hz
+
+PROZESSOR
+CPU-Architektur: ARMv7 Processor rev 1 (v7l)
+Board: MSM8974
+Chipsatz: Qualcomm MSM8974PRO-AA
+Kerne: 4
+Taktungsgeschwindigkeit: 2265 MHz - 2265 MHz
+Anleitungssets: armeabi-v7a, armeabi
+CPU-Features: swp half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt
+CPU-Regulator: interactive
+Kernel-Version: 3.4.0+
+Kernel-Architektur: armv7l
+
+GRAFIKEN
+Renderer: Adreno (TM) 330
+Verkäufer: Qualcomm
+OpenGL-Version: OpenGL ES 3.0
+
+RAM
+Gesamt: 2871 MB
+Java Heap: 192 MB
+
+SPEICHER
+Intern: 11,5 GB
+EXTERN: Nicht erkannt
+
+PRIMÄR KAMERA
+Auflösung: 13 MP
+Blitz: Ja
+Video Auflösung: Full HD, 1920x1080
+Unterstützte Auflösungen: 
+    Bild:
+    4160x3120
+    4000x3000
+    4096x2160
+    3840x2160
+    3264x2448
+    3120x3120
+    2592x1944
+    2048x1536
+    1920x1080
+    1600x1200
+    1280x960
+    1280x768
+    1280x720
+    1088x1088
+    1024x768
+    800x600
+    800x480
+    720x480
+    640x480
+    352x288
+    320x240
+
+    Video:
+    1920x1080 (Full HD)
+    1280x720 (HD)
+    864x480
+    800x480 (WVGA)
+    720x480
+    640x480 (VGA)
+    480x320
+    352x288
+    320x240
+    176x144
+
+SEKUNDÄR KAMERA
+Auflösung: 8 MP
+Video Auflösung: Full HD, 1920x1080
+Unterstützte Auflösungen: 
+    Bild:
+    3264x2448
+    2592x1944
+    2048x1536
+    1920x1080
+    1600x1200
+    1280x960
+    1280x768
+    1280x720
+    1088x1088
+    1024x768
+    800x600
+    800x480
+    720x480
+    640x480
+    352x288
+    320x240
+
+    Video:
+    1920x1080 (Full HD)
+    1280x720 (HD)
+    864x480
+    800x480 (WVGA)
+    720x480
+    640x480 (VGA)
+    480x320
+    352x288
+    320x240
+    176x144
+
+FEATURES
+Bluetooth: Ja
+Bluetooth LE: Ja
+GPS: Ja
+NFC: Nein
+USB Zubehörteil: Ja
+WiFi: Ja
+WiFi Direct: Ja
+
+AKKU
+Technologie: Li-ion
+Gesundheit: Gut
+
+SENSOREN
+LIS3DSH Accelerometer
+MMC34160PJ MMC34160PJ
+MMC34160PJ MMC34160PJ Uncalibrated
+L3GD20 Gyroscope
+L3GD20 Gyroscope Uncalibrated
+APDS-9921 Proximity
+APDS-9921 Light
+Gravity
+Linear Acceleration
+Rotation Vector
+Step Detector
+Step Counter
+Significant Motion Detector
+Game Rotation Vector
+GeoMagnetic Rotation Vector
+Orientation
+Gyro Tap
+
+
+Erstellt von Droid Info
