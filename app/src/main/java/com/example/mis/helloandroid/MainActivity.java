@@ -31,32 +31,53 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final Button myTextViewButton = findViewById(R.id.button);
+        final Button myWebViewButton = findViewById(R.id.button2);
 
+        myTextViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showTextView(v);
+            }
+        });
+
+        myWebViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showWebView(v);
+            }
+        });
+    }
+
+    public void showWebView(View view) {
         final Activity activity = this;
-        WebView myWebView = new WebView(this);
-        //myWebView.getSettings().setJavaScriptEnabled(true);
+        final WebView myWebView = findViewById(R.id.aWebView);
+        final EditText myEditView = findViewById(R.id.editText);
+
+        String inputUrl = myEditView.getText().toString();
+
+        // followed this guide to show HTML-content
+        // https://developer.android.com/guide/webapps/webview.html
         myWebView.setWebViewClient(new WebViewClient() {
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
                 Toast.makeText(activity, "Oh no! " + description, Toast.LENGTH_SHORT).show();
             }
         });
+        if(myWebView.getVisibility() == view.VISIBLE) {
+            myWebView.setVisibility(view.GONE);
+        } else {
+            myWebView.setVisibility(view.VISIBLE);
+        }
 
-        myWebView.loadUrl("https://www.google.de");
-        final Button myButton = findViewById(R.id.button);
-        myButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                foobar(v);
-            }
-        });
+        myWebView.loadUrl(inputUrl);
     }
 
-    public void foobar(View view) {
+    public void showTextView(View view) {
         final TextView myTextView = findViewById(R.id.textView);
         final EditText myEditView = findViewById(R.id.editText);
 
         myTextView.setMovementMethod(new ScrollingMovementMethod());
-        // followed this tutorial to get the communication running
+        // followed this guide to get the communication running
         // https://developer.android.com/training/volley/simple.html
         RequestQueue queue = Volley.newRequestQueue(this);
         String inputUrl = myEditView.getText().toString();
