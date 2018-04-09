@@ -54,35 +54,44 @@ public class MainActivity extends AppCompatActivity {
         final WebView myWebView = findViewById(R.id.aWebView);
         final EditText myEditView = findViewById(R.id.editText);
 
+        Toast toast = Toast.makeText(MainActivity.this, "This is not a valid URL.", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.CENTER, 0 ,0);
+
         String inputUrl = myEditView.getText().toString();
 
-        // followed this guide to show HTML-content
-        // https://developer.android.com/guide/webapps/webview.html
-        myWebView.setWebViewClient(new WebViewClient() {
-            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                Toast.makeText(activity, "Oh no! " + description, Toast.LENGTH_SHORT).show();
-            }
-        });
-        if(myWebView.getVisibility() == view.VISIBLE) {
-            myWebView.setVisibility(view.GONE);
+        if(URLUtil.isValidUrl(inputUrl) && !inputUrl.isEmpty() ) {
+            // followed this guide to show HTML-content
+            // https://developer.android.com/guide/webapps/webview.html
+            myWebView.setWebViewClient(new WebViewClient() {
+                public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                    Toast.makeText(activity, "Oh no! " + description, Toast.LENGTH_SHORT).show();
+                }
+            });
         } else {
-            myWebView.setVisibility(view.VISIBLE);
+            toast.show();
         }
-
+        myWebView.setVisibility(view.VISIBLE);
         myWebView.loadUrl(inputUrl);
     }
 
     public void showTextView(View view) {
         final TextView myTextView = findViewById(R.id.textView);
         final EditText myEditView = findViewById(R.id.editText);
+        final WebView myWebView = findViewById(R.id.aWebView);
 
-        myTextView.setMovementMethod(new ScrollingMovementMethod());
+        Toast toast = Toast.makeText(MainActivity.this, "This is not a valid URL.", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.CENTER, 0 ,0);
+
+        // if webView is overlapping textView make it 'gone'
+        myWebView.setVisibility(view.GONE);
+
         // followed this guide to get the communication running
         // https://developer.android.com/training/volley/simple.html
+        myTextView.setMovementMethod(new ScrollingMovementMethod());
         RequestQueue queue = Volley.newRequestQueue(this);
         String inputUrl = myEditView.getText().toString();
 
-        if(URLUtil.isValidUrl(inputUrl)) {
+        if(URLUtil.isValidUrl(inputUrl) && !inputUrl.isEmpty() ) {
             //fill myTextView accordingly to the response
             StringRequest inputUrlRequest = new StringRequest(Request.Method.GET, inputUrl,
                     new Response.Listener<String>() {
@@ -106,8 +115,6 @@ public class MainActivity extends AppCompatActivity {
             );
             queue.add(inputUrlRequest);
         } else {
-            Toast toast = Toast.makeText(MainActivity.this, "This is not a valid URL.", Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.CENTER, 0 ,0);
             toast.show();
         }
     }

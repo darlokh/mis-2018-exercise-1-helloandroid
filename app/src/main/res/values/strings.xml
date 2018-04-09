@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">hello_android</string>
+    <string name="app_name" translatable="false">hello_android</string>
     <string name="edit_message">Enter a URL</string>
     <string name="button_send">Connect</string>
     <string name="foobarText">No response yet</string>
