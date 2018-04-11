@@ -1,2 +1,4 @@
 Kai Gerrit Lünsdorf, 100141
 Maud Canisius, 117723
+
+the APK can be found in 'app/build/outputs/apk/debug/'
